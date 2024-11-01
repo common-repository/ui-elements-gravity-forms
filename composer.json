@@ -1,0 +1,20 @@
+{
+  "name": "thriveweb/ui_elements",
+  "license": "GPL-2.0-or-later",
+  "description": "UI Elements add label animations and modern input styles.",
+  "keywords": [
+    "wordpress",
+    "wp",
+    "gravityforms"
+  ],
+  "support": {
+    "issues": "https://github.com/thriveweb/ui_elements"
+  },
+  "require": {
+    "php": ">=7.0",
+    "squizlabs/php_codesniffer": "^3.3.1"
+  },
+  "require-dev": {
+    "wp-coding-standards/wpcs": "2.1.*"
+  }
+}

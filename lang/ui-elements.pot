@@ -1,0 +1,35 @@
+# Copyright (C) 2020 UI Elements
+# This file is distributed under the same license as the UI Elements package.
+msgid ""
+msgstr ""
+"Project-Id-Version: UI Elements 1.0.3\n"
+"Report-Msgid-Bugs-To: http://wordpress.org/tag/WordPress-Plugin-Template\n"
+"POT-Creation-Date: 2020-10-23 11:28:06+00:00\n"
+"MIME-Version: 1.0.3\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2020-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+
+#: includes/settings.php:81
+msgid "Save Settings"
+msgstr ""
+
+msgid "Cheatin&#8217; huh?"
+msgstr ""
+#. Plugin Name of the plugin/theme
+msgid "UI Elements"
+msgstr ""
+
+#. Plugin URI of the plugin/theme
+msgid "https://thriveweb.com.au/"
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "Thriveweb - Alex Frith"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "https://thriveweb.com.au/"
+msgstr ""

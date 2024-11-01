@@ -1,0 +1,79 @@
+/* phpcs:ignore */
+.ui_elements-admin a {
+  outline: none;
+}
+.ui_elements-admin h1 {
+  margin: 20px 0;
+}
+
+.ui_elements-mainsplit {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.ui_elements-relative {
+  position: relative;
+}
+
+.ui_elements-logo {
+  width: 100px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.ui_elements-logo img {
+  max-width: 200px;
+  width: 100%;
+  height: auto;
+}
+
+.ui_elements-info-pod {
+  width: calc(30% - 80px);
+  padding: 10px 20px;
+  background: rgba(255, 255, 255, 0.6);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
+.ui_elements-admin .ui_elements-pod {
+  width: 70%;
+}
+.ui_elements-admin .ui_elements-flex {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.ui_elements-admin input[type="number"] {
+  max-width: 115px;
+}
+
+.ui_elements-flex-row {
+  display: flex;
+  justify-content: space-between;
+  text-align: left;
+  margin: 0 0 40px 0;
+  flex-wrap: wrap;
+}
+
+.ui_elements-section-box {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  width: calc(50% - 60px);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+@media screen and (max-width: 800px) {
+  .ui_elements-info-pod,
+  .ui_elements-section-box {
+    width: calc(100% - 60px);
+  }
+  .ui_elements-admin .ui_elements-pod {
+    width: 100%;
+  }
+}
+
+#samples img {
+  max-width: 100%;
+}

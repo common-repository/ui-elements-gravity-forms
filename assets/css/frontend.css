@@ -1,0 +1,398 @@
+/* phpcs:ignore */
+:root {
+  --UIborderRadius: 4px;
+  --UIfontSize: 14px;
+
+  --UIinputBackground: transparent;
+  --UIinputColour: #000;
+  --UImidGrey: #555;
+  --UIprimary: black;
+  --UIhightlight: #3daeff;
+  --UIerror: #ce202f;
+
+  --UImessageText: #ffffff;
+  --UImessageBackground: #333;
+  --UIleft: 10px;
+  --UItop: 10px;
+}
+
+.gform_heading,
+.gform_body,
+.gform_footer {
+  margin-bottom: 20px;
+}
+
+.gform_heading h3.gform_title {
+  margin: 0;
+}
+
+.gform_wrapper > ul {
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.gform_wrapper ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.gform_wrapper ul li {
+  list-style-type: none;
+  position: relative;
+  width: 100%;
+  margin: 10px 0;
+}
+.gform_wrapper ul li:before {
+  display: none;
+}
+.gform_wrapper ul li label {
+  color: var(--UIprimary);
+  font-size: var(--UIfontSize);
+}
+
+.gform_wrapper ul li span label {
+  font-size: 10px;
+  margin-bottom: 10px;
+}
+
+.gform_wrapper ul li .gfield_description {
+  font-size: 13px;
+  margin: 5px;
+}
+
+.gfield_required {
+  color: var(--UIerror);
+}
+
+.ginput_complex span label {
+  position: relative;
+  font-size: 10px;
+  left: var(--UIleft);
+}
+
+.gform_wrapper ul li.ui_elements-text,
+.gform_wrapper ul li.ui_elements-address,
+.gform_wrapper ul li.ui_elements-name,
+.gform_wrapper ul li.ui_elements-date,
+.gform_wrapper ul li.ui_elements-website,
+.gform_wrapper ul li.ui_elements-number,
+.gform_wrapper ul li.ui_elements-phone,
+.gform_wrapper ul li.ui_elements-password,
+.gform_wrapper ul li.ui_elements-email,
+.gform_wrapper ul li.ui_elements-textarea {
+  margin-top: 10px;
+  transition: all 0.4s ease;
+}
+.gform_wrapper ul li.focused.ui_elements-text,
+.gform_wrapper ul li.focused.ui_elements-address,
+.gform_wrapper ul li.focused.ui_elements-name,
+.gform_wrapper ul li.focused.ui_elements-date,
+.gform_wrapper ul li.focused.ui_elements-website,
+.gform_wrapper ul li.focused.ui_elements-number,
+.gform_wrapper ul li.focused.ui_elements-phone,
+.gform_wrapper ul li.focused.ui_elements-password,
+.gform_wrapper ul li.focused.ui_elements-email,
+.gform_wrapper ul li.focused.ui_elements-textarea {
+  margin-top: 40px;
+}
+
+.ui_elements-text .gfield_label,
+.ui_elements-address .gfield_label,
+.ui_elements-name .gfield_label,
+.ui_elements-date .gfield_label,
+.ui_elements-website .gfield_label,
+.ui_elements-number .gfield_label,
+.ui_elements-phone .gfield_label,
+.ui_elements-password .gfield_label,
+.ui_elements-email .gfield_label,
+.ui_elements-textarea .gfield_label {
+  position: absolute;
+  left: var(--UIleft);
+  top: var(--UItop);
+  z-index: 10;
+  transition: all 0.3s ease-out;
+}
+
+.gfield.focused .gfield_label {
+  transform: translateY(-200%);
+  font-size: var(--UIfontSize);
+}
+
+.gfield input,
+.gfield textarea {
+  padding: 10px;
+  border: none;
+  height: auto;
+}
+
+.gfield textarea {
+  min-height: 100px;
+}
+
+.gform_wrapper input[type="text"],
+.gform_wrapper input[type="number"],
+.gform_wrapper input[type="email"],
+.ui_elements-text input[type="text"],
+.ui_elements-phone input[type="tel"],
+.ui_elements-website input[type="url"],
+.ui_elements-password input[type="password"],
+.ui_elements-email input[type="email"],
+.ui_elements-url input[type="url"],
+.ui_elements-date input[type="date"],
+.ui_elements-month input[type="month"],
+.ui_elements-time input[type="time"],
+.ui_elements-datetime input[type="datetime"],
+.ui_elements-datetime input[type="datetime-local"],
+.ui_elements-week input[type="week"],
+.ui_elements-number input[type="number"],
+.ui_elements-search input[type="search"],
+.ui_elements-tel input[type="tel"],
+.ui_elements-color input[type="color"],
+.ui_elements-textarea textarea,
+.ui_elements-select select,
+.ui_elements-address select,
+.ui_elements-multiselect select,
+.ui_elements-time select {
+  font-family: inherit;
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  display: block;
+  margin: 0;
+  border: 1px solid var(--UImidGrey);
+  padding: 15px 20px;
+  line-height: 1.4;
+  -webkit-transition: border-color 0.2s;
+  transition: border-color 0.2s;
+  resize: none;
+  width: 100%;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  background: var(--UIinputBackground);
+  font-size: var(--UIfontSize);
+  color: var(--UIinputColour);
+  border-radius: var(--UIborderRadius);
+}
+
+/* Gravity forms advance */
+
+.ui_elements-time .clear-multi {
+  display: flex;
+  align-items: stretch;
+  justify-content: flex-start;
+}
+.ui_elements-time .clear-multi i {
+  display: none;
+}
+.ui_elements-time .clear-multi label {
+  display: inline;
+  font-size: 10px;
+  line-height: 1;
+  height: 12px;
+  margin: 0;
+}
+
+.ginput_container_time {
+  margin-right: 10px;
+}
+
+/* Select */
+
+.ginput_container_select,
+.ui_elements-address .address_country,
+.ui_elements-time .ginput_container_time:last-child {
+  position: relative;
+  display: block;
+}
+.ginput_container_select select,
+.ui_elements-address .address_country select,
+.ui_elements-time .ginput_container_time:last-child select {
+  background: var(--UIinputBackground);
+  appearance: none;
+  font-size: var(--UIfontSize);
+}
+
+.ui_elements-address .address_country:after,
+.ui_elements-time .ginput_container_time:last-child:after,
+.ui_elements-select:after {
+  content: "";
+  position: absolute;
+  right: 25px;
+  top: 55%;
+  border-right: 1px solid var(--UImidGrey);
+  border-bottom: 1px solid var(--UImidGrey);
+  height: 10px;
+  width: 10px;
+  transform: rotate(45deg);
+  pointer-events: none;
+}
+.ui_elements-address .address_country:after {
+  position: absolute;
+  right: 25px;
+  top: 18px;
+}
+.ui_elements-time .ginput_container_time input {
+  padding: 15px 0 15px 20px;
+}
+.ui_elements-time .ginput_container_time:last-child select {
+  padding: 15px 40px 15px 20px;
+}
+.ui_elements-time .ginput_container_time:last-child:after {
+  position: absolute;
+  right: 20px;
+  top: 18px;
+}
+/* Radio Checkboxes buttons */
+
+.ui_elements-radio ul li {
+  display: inline-block;
+  width: auto;
+}
+
+.ui_elements-radio.ui_elements-radio ul li:not(:first-of-type) {
+  margin-left: 10px;
+}
+
+.ui_elements-radio ul li {
+  border: 1px solid var(--UImidGrey);
+  overflow: hidden;
+  border-radius: var(--UIborderRadius);
+}
+
+.ui_elements-checkbox input[type="checkbox"] + label,
+.ui_elements-radio ul label,
+.ui_elements-checkbox ul label {
+  position: relative;
+  top: auto;
+  left: auto;
+  display: inline-block;
+  z-index: 1;
+  cursor: pointer;
+  user-select: none;
+  padding: 2px 10px;
+  border-left: 25px solid transparent;
+  border-radius: var(--UIborderRadius);
+  display: block;
+}
+
+.ui_elements-radio li input,
+.ui_elements-checkbox li input {
+  display: none;
+}
+
+.ui_elements-radio li input + label::before,
+.ui_elements-checkbox li input + label::before {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  display: block;
+  right: 100%;
+  top: 3px;
+  background: var(--UImidGrey);
+  border-radius: var(--UIborderRadius);
+}
+
+.ui_elements-radio li input:checked + label::before,
+.ui_elements-checkbox li input:checked + label::before {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  display: block;
+  right: 100%;
+  top: 3px;
+  background: var(--UIhightlight);
+}
+
+.ui_elements-radio li input + label::after,
+.ui_elements-checkbox li input + label::after {
+  transform: scale(0.5);
+  transition: 0.3s ease all;
+  content: "\2713";
+  position: absolute;
+  display: block;
+  top: 3px;
+  left: -17px;
+  font-weight: bold;
+  color: white;
+  opacity: 0;
+}
+
+.ui_elements-radio Input:checked + label::after,
+.ui_elements-checkbox li input:checked + label::after {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* Placeholders */
+
+.gfield ::-webkit-input-placeholder {
+  color: transparent;
+  transition: all 0.3s ease;
+}
+.gfield ::-ms-input-placeholder {
+  color: transparent;
+  transition: all 0.3s ease;
+}
+.gfield ::placeholder {
+  color: transparent;
+  transition: all 0.3s ease;
+}
+
+/* Messages */
+
+.gform_confirmation_message {
+  background: var(--UImessageBackground);
+  border-radius: calc(var(--UIborderRadius) * 2);
+  padding: 20px;
+  border: none;
+  border-bottom: 1px solid var(--UImessageBackground);
+  height: auto;
+  color: var(--UImessageText);
+  position: relative;
+}
+
+.gform_confirmation_message:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 0;
+  border: 26px solid transparent;
+  border-top-color: var(--UImessageBackground);
+  border-bottom: 0;
+  border-left: 0;
+  margin-left: -13px;
+  margin-bottom: -26px;
+}
+
+/* errors */
+.gform_wrapper .validation_error,
+.gform_wrapper .validation_message {
+  background: var(--UImessageBackground);
+  margin-bottom: 40px;
+  color: var(--UImessageText);
+  padding: 10px 20px;
+  border-left: 3px solid;
+}
+
+.gform_wrapper .validation_message {
+  display: none;
+  padding: 5px 20px;
+}
+
+.gform_wrapper .gfield_error input,
+.gform_wrapper .gfield_error select,
+.gform_wrapper .gfield_error textarea {
+  border-color: var(--UIerror);
+}
+
+.gform_wrapper .gfield_error.ui_elements-radio li input + label::before,
+.gform_wrapper .gfield_error.ui_elements-checkbox li input + label::before {
+  background: var(--UIerror);
+}
